@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => AddOrEditScreen(id: NotesProviderr.notesData[index].id, isSave: false,model: NotesModel(title: NotesProviderr.notesData[index].title,description: NotesProviderr.notesData[index].description),)));
               },
-              title: Text(NotesProviderr.notesData[index].title.toString()),
+              title: Text(NotesProviderr.notesData[index].title.toString(),style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),),
               subtitle: Text("Click to View or Edit"),
               trailing: CircleAvatar(
                 backgroundColor: themeProvider.isDark ? Colors.deepPurple : Color.fromARGB(255, 217, 153, 228),
