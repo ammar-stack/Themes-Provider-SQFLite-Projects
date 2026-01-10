@@ -32,9 +32,17 @@ class MyApp extends StatelessWidget {
           backgroundColor: const Color.fromARGB(255, 217, 153, 228),
           titleTextStyle: TextStyle(fontSize: 22,color: Colors.black,fontWeight: FontWeight.bold),
         ),
+
         scaffoldBackgroundColor: const Color.fromARGB(255, 217, 153, 228),
         cardTheme: CardThemeData(
           color: Colors.deepPurple, 
+        ),
+      
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.deepPurple,
+            foregroundColor: Colors.white
+          )
         ),
         listTileTheme: ListTileThemeData(
           textColor: Colors.white,
@@ -54,6 +62,22 @@ class MyApp extends StatelessWidget {
           titleTextStyle: TextStyle(fontSize: 22,color: Colors.white,fontWeight: FontWeight.bold),
         ),
         scaffoldBackgroundColor: Colors.deepPurple,
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Color.fromARGB(255, 217, 153, 228),
+            foregroundColor: Colors.black
+          )
+        ),
+        inputDecorationTheme: InputDecorationThemeData(
+          focusColor: Colors.white,
+          hintStyle: TextStyle(color: const Color.fromARGB(255, 217, 153, 228)),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: const Color.fromARGB(255, 217, 153, 228))
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: const Color.fromARGB(255, 217, 153, 228))
+          )
+        ),
         cardTheme: CardThemeData(
           color: const Color.fromARGB(255, 217, 153, 228), 
         ),

@@ -24,22 +24,19 @@ class HomePage extends StatelessWidget {
       body: ListView.builder(
         itemCount: NotesProviderr.notesData.length,
         itemBuilder: (context,index){
-          return Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Card(
-              child: ListTile(
-                onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => AddOrEditScreen(id: NotesProviderr.notesData[index].id, isSave: false,model: NotesModel(title: NotesProviderr.notesData[index].title,description: NotesProviderr.notesData[index].description),)));
-                },
-                title: Text(NotesProviderr.notesData[index].title.toString()),
-                subtitle: Text("Click to View or Edit"),
-                trailing: CircleAvatar(
-                  backgroundColor: themeProvider.isDark ? Colors.deepPurple : Color.fromARGB(255, 217, 153, 228),
-                  child: IconButton(
-                    onPressed: (){
-                      NotesProviderr.deleteNotes(NotesModel(id: NotesProviderr.notesData[index].id));
-                    }, icon: Icon(Icons.delete)),
-                ),
+          return Card(
+            child: ListTile(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => AddOrEditScreen(id: NotesProviderr.notesData[index].id, isSave: false,model: NotesModel(title: NotesProviderr.notesData[index].title,description: NotesProviderr.notesData[index].description),)));
+              },
+              title: Text(NotesProviderr.notesData[index].title.toString()),
+              subtitle: Text("Click to View or Edit"),
+              trailing: CircleAvatar(
+                backgroundColor: themeProvider.isDark ? Colors.deepPurple : Color.fromARGB(255, 217, 153, 228),
+                child: IconButton(
+                  onPressed: (){
+                    NotesProviderr.deleteNotes(NotesModel(id: NotesProviderr.notesData[index].id));
+                  }, icon: Icon(Icons.delete)),
               ),
             ),
           );
