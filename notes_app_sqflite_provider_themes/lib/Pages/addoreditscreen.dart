@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app_sqflite_provider_themes/Pages/addoreditscreen.dart';
 import 'package:notes_app_sqflite_provider_themes/Providers/notesprovider.dart';
 import 'package:notes_app_sqflite_provider_themes/Providers/themeprovider.dart';
 import 'package:notes_app_sqflite_provider_themes/Services/notesmodel.dart';

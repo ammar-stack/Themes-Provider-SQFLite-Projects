@@ -1,10 +1,8 @@
-import 'dart:io';
 
 import 'package:notes_app_sqflite_provider_themes/Services/notesmodel.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:sqflite/sqlite_api.dart';
 
 class Dbhelper {
   Dbhelper._();

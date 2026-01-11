@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preference_themes/homepage.dart';
 import 'package:shared_preference_themes/themeprovider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   runApp(
